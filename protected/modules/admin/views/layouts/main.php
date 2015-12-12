@@ -33,7 +33,11 @@
 				array('label'=>'Страницы', 'url'=>array('/admin/page')),
 				array('label'=>'Пользователи', 'url'=>array('/admin/users')),
 				array('label'=>'Гайд', 'url'=>array('/admin/users')),
-				
+				array('label'=>'Home', 'url'=>array('/site/index'), 'items'=>array(
+					  array('label'=>'Первый подпункт', 'url'=>array('/site/index')),
+					  array('label'=>'Второй подпункт', 'url'=>array('/site/index')),
+					)
+				),
 				array('label'=>'Login', 'url'=>array('user/login'), 'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/logout'), 'visible'=>!Yii::app()->user->isGuest)
 			),

@@ -45,8 +45,12 @@ nothing added to commit but untracked files present (use "git add" to track) \\-
 
 ..................................................................................................
 
-добавить файлы
+добавить все файлы
 > git add .
+
+добавить один файлы
+> git add name.txt
+> git add "*.php"
 
 просмотр(игноре) status в папке
 > git status --untraked-files=normal
@@ -60,3 +64,10 @@ git rm --cached namefile.php
 -a -> все файлы
 -m"init" -> (-m->messange),name=init
 > git commit -a -m"init"
+
+откат до состояния в репозитории
+(откат одного файла)
+> git checkout --file.php
+
+история коммитов
+> get log
