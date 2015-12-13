@@ -70,4 +70,22 @@ git rm --cached namefile.php
 > git checkout --file.php
 
 история коммитов
-> get log
+> git log
+
+хелп
+> git help
+
+хелп логов
+> git help log
+
+короткий просмотр коммитов
+> git log --pretty=format:"%h - %an, %ar : %s"
+
+коммиты за последние 2 недели
+> git log --slince=2.weeks
+
+показывает подробные изменения в коммите(в изм файле), 2 последние
+> git log -p -2
+
+хелп по разделам
+> git help commit
