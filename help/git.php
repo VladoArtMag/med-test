@@ -123,7 +123,7 @@ Date:   Sat Dec 12 22:42:58 2015 +0200
 ................................................
 чтобы вместо VIM использовать редактор Notepad ++
 ввести строку
-> git config --global core.editor "'C:\Program Files (notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
+> git config --global core.editor "'C:\Program Files (x86)\Notepad++\notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
 можно посмотреть, что изменилось в config 
 C:\Users\Vlado\.gitconfig
 ................ просмотр ................
@@ -132,9 +132,24 @@ C:\Users\Vlado\.gitconfig
 	email = masta@housemagik.com
 
 [core]
-	editor = 'C:\\Program Files (notepad++.exe' -multiInst -notabbar -nosession -noPlugin
+	editor = 'C:\\Program Files (x86)\\Notepad++\\notepad++.exe' -multiInst -notabbar -nosession -noPlugin
 ..........................................
 Проверка работы
 > git status (файл непроиндексирован)
-> git add *.php
+> git add .
 > git status (файл проиндексирован)
+> git commit (открывается Notepad), пишем в первой строке свой комментарий, сохраняемся, закрываем . В гите видно добавление нового коммита и комента к нему
+
+Создание новой ветки
+> git checkout -b auch_moodle
+auch_moodle - название ветки
+checkout -b - новая ветка
+
+просмотр насваний все веток
+> git branch
+
+ветки плюс коммиты
+> git branch -v
+
+Переход между ветками
+> git checkout masta
