@@ -152,4 +152,6 @@ checkout -b - новая ветка
 > git branch -v
 
 Переход между ветками
-> git checkout masta
+> git checkout master
+
+/////////////////////////////////
